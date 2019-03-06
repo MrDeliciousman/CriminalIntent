@@ -1,45 +1,48 @@
 package edu.cnm.deepdive.criminalintent;
 
+
 import java.util.Date;
 import java.util.UUID;
 
+// A model class
 public class Crime {
 
-  private UUID mId;
-  private String mTitle;
-  private Date mDate;
-  private boolean mSolved;
+  private UUID id;
+  private String title;
+  private Date date;
+  private boolean solved;
+
 
   public Crime() {
-    mId = UUID.randomUUID();
-    mDate = new Date();
+    id = UUID.randomUUID();
+    date = new Date();
   }
 
   public UUID getId() {
-    return mId;
+    return id;
   }
 
   public String getTitle() {
-    return mTitle;
+    return title;
   }
 
   public void setTitle(String title) {
-    mTitle = title;
+    this.title = title;
   }
 
   public Date getDate() {
-    return mDate;
+    return date;
   }
 
   public void setDate(Date date) {
-    mDate = date;
+    this.date = date;
   }
 
   public boolean isSolved() {
-    return mSolved;
+    return solved;
   }
 
   public void setSolved(boolean solved) {
-    mSolved = solved;
+    this.solved = solved;
   }
 }
